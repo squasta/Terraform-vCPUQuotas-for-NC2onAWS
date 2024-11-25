@@ -49,3 +49,15 @@ To view / change the service quotas for your AWS you can use
 
 - This sample of Terraform IaC Code can be use as is to change your quotas.
 
+### Prerequisites
+
+You need to install [terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli ) (I did not test it with [opentofu](https://opentofu.org/docs/intro/install/) but it should also work)
+
+
+### Deployment
+
+  ```bash
+  terraform init
+  terraform plan 
+  terraform apply
+  ```
