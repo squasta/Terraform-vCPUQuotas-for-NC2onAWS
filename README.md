@@ -28,6 +28,7 @@ To view / change the service quotas for your AWS you can use
     ```bash
     aws service-quotas list-service-quotas --service-code ec2 --quota-code L-1216C47A --output table
     ```
+
 <img width='600' src='./images/AWSCLIQuotasEC2.png'/> 
 
 
