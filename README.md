@@ -27,21 +27,22 @@ To view / change the service quotas for your AWS you can use
 
     ```bash
     aws service-quotas list-service-quotas --service-code ec2 --quota-code L-1216C47A --output table
+
     ```
 
 <img width='600' src='./images/AWSCLIQuotasEC2.png'/> 
 
 
-    Understanding the Output
-        The output will include several fields for each quota:
-        - ServiceCode: Will be "ec2" for all results
-        - ServiceName: "Amazon Elastic Compute Cloud (Amazon EC2)"
-        - QuotaArn: The Amazon Resource Name for the quota
-        - QuotaCode: A unique identifier for the quota
-        - QuotaName: The name of the quota, which will include "vCPU" for relevant quotas
-        - Value: The current quota value
-        - Unit: The unit of measurement (typically "None" for vCPU counts)
-        - Adjustable: Whether the quota can be increased upon request
+Understanding the Output
+    The output will include several fields for each quota:
+    - ServiceCode: Will be "ec2" for all results
+    - ServiceName: "Amazon Elastic Compute Cloud (Amazon EC2)"
+    - QuotaArn: The Amazon Resource Name for the quota
+    - QuotaCode: A unique identifier for the quota
+    - QuotaName: The name of the quota, which will include "vCPU" for relevant quotas
+    - Value: The current quota value
+    - Unit: The unit of measurement (typically "None" for vCPU counts)
+    - Adjustable: Whether the quota can be increased upon request
 
 
 - This sample of Terraform IaC Code can be use as is to change your quotas.
